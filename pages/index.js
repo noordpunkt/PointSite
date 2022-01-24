@@ -36,44 +36,41 @@ export default function Home() {
         />
       </Head>
 
-      <div>
-        <Header />
-      </div>
-
       <main>
+        <Header />
+
         <div className={styles.hero}>
           <div className={styles.heroLeft}>
-            
-              <h1 className={styles.heroTextH1}>
-                Retrouvez tous vos restaurants préférés d'emporter.
-              </h1>
+            <h1 className={styles.heroTextH1}>
+              {/* Retrouvez tous vos restaurants préférés. */}
+              La première App de livraison équitable.
+            </h1>
 
-              {/* <p className={styles.textSubtitle}>Disponible dans</p> */}
+            {/* <p className={styles.textSubtitle}>Disponible dans</p> */}
 
-              <a
-                href="https://apps.apple.com/us/app/point-restaurants/id1583401051"
-                target="_blank"
-              >
-                <Image
-                  src="/appStoreBadge.svg"
-                  alt="Download Point France"
-                  width={160}
-                  height={49}
-                />
-              </a>
+            <a
+              href="https://apps.apple.com/us/app/point-restaurants/id1583401051"
+              target="_blank"
+            >
+              <Image
+                src="/appStoreBadge.svg"
+                alt="Download Point France"
+                width={160}
+                height={49}
+              />
+            </a>
 
-              <a
-                href="https://play.google.com/store/apps/details?id=com.nord.point"
-                target="_blank"
-              >
-                <Image
-                  src="/googlePlayBadge.svg"
-                  alt="Download Point France"
-                  width={160}
-                  height={49}
-                />
-              </a>
-           
+            <a
+              href="https://play.google.com/store/apps/details?id=com.nord.point"
+              target="_blank"
+            >
+              <Image
+                src="/googlePlayBadge.svg"
+                alt="Download Point France"
+                width={160}
+                height={49}
+              />
+            </a>
           </div>
 
           <div className={styles.heroRight}>
@@ -89,7 +86,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.Cards}>
+        {/* <div className={styles.Cards}>
           <div className={styles.cardContainer}>
             <Image
               src="/image1.svg"
@@ -128,7 +125,7 @@ export default function Home() {
               <p className={styles.textSubtitle}>Pour tous les goûts</p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.gridFlex}>
           <div className={styles.heroLeftTwo}>
@@ -144,18 +141,21 @@ export default function Home() {
           </div>
 
           <div className={styles.heroRightTwo}>
-            <h1 className={styles.heroTextH1}>
-              Restaurant?<br></br>
+            <h1 className={styles.heroTextH1Dark}>
+            Liberté, égalité, Restauranter.<br></br>
             </h1>
 
-            <p className={styles.subtitle}>
-              Notre mission est de construire une <span className={styles.strong}>app de livraison équitable </span>
+            <p className={styles.subtitleDark}>
+              Notre mission est de construire une{" "}
+              <span className={styles.strong}>app de livraison équitable </span>
               pour permettre aux restaurateurs de livrer leurs clients sans
               payer de commissions exorbitantes.
             </p>
 
-            <p className={styles.subtitle}>
-              Plateforme de gestion des commandes en ligne via <span className={styles.strong}>App.</span><br></br>
+            <p className={styles.subtitleDark}>
+              Plateforme de gestion des commandes en ligne via{" "}
+              <span className={styles.strong}>App.</span>
+              <br></br>
               Paiement en ligne.<br></br>
               Gestion des menus et des prix.<br></br>
             </p>
@@ -178,10 +178,6 @@ export default function Home() {
 
         main {
           flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: flex-start;
         }
 
         footer {

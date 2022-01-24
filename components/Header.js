@@ -7,10 +7,8 @@ const Header = () => {
 
   return (
     <div className={styles.Header}>
-        <div className={styles.Logo}>
-          <div className={styles.logo}>Point France.</div>
-        </div>
-      </div>
+      <div className={styles.logo}>Point France.</div>
+    </div>
   );
 };
 
