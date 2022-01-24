@@ -20,7 +20,8 @@ const Footer = () => {
       <div className={styles.footerContainer}>
         <h2 className={styles.textLightH2}>Restaurant Partner</h2>
         <p className={styles.textLight}>
-        <a href="mailto:e@punkt.app">Email nous</a>
+        <a className={styles.textLink}
+        href="mailto:lepoint.app@gmail.com">Email nous</a>
         </p>
       </div>
 

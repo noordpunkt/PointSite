@@ -36,31 +36,31 @@ export default function Home() {
         />
       </Head>
 
-      <div className={styles.StickyTop}>
+      <div>
         <Header />
       </div>
 
       <main>
         <div className={styles.hero}>
           <div className={styles.heroLeft}>
-            <div className={styles.heroTextContainer}>
+            
               <h1 className={styles.heroTextH1}>
                 Retrouvez tous vos restaurants préférés d'emporter.
               </h1>
 
-              <p className={styles.textSubtitle}>Disponible dans</p>
+              {/* <p className={styles.textSubtitle}>Disponible dans</p> */}
 
-              {/* <a
-              href="https://apps.apple.com/us/app/gusto-fresh/id1505391704?ls=1"
-              target="_blank"
-            >
-              <Image
-                src="/appStoreBadge.svg"
-                alt="Download Point France"
-                width={160}
-                height={49}
-              />
-            </a> */}
+              <a
+                href="https://apps.apple.com/us/app/point-restaurants/id1583401051"
+                target="_blank"
+              >
+                <Image
+                  src="/appStoreBadge.svg"
+                  alt="Download Point France"
+                  width={160}
+                  height={49}
+                />
+              </a>
 
               <a
                 href="https://play.google.com/store/apps/details?id=com.nord.point"
@@ -73,7 +73,7 @@ export default function Home() {
                   height={49}
                 />
               </a>
-            </div>
+           
           </div>
 
           <div className={styles.heroRight}>
@@ -99,7 +99,7 @@ export default function Home() {
             />
 
             <div className={styles.cardContainerText}>
-              <p className={styles.textSubtitle}>Inscription au restaurant</p>
+              <p className={styles.textSubtitle}>Retrouvez vos restaurants.</p>
             </div>
           </div>
 
@@ -112,7 +112,7 @@ export default function Home() {
             />
 
             <div className={styles.cardContainerText}>
-              <p className={styles.textSubtitle}>Restos de quartier.</p>
+              <p className={styles.textSubtitle}>Restos de quartier</p>
             </div>
           </div>
 
@@ -125,10 +125,40 @@ export default function Home() {
             />
 
             <div className={styles.cardContainerText}>
-              <p className={styles.textSubtitle}>
-                Il y en a pour tous les goûts
-              </p>
+              <p className={styles.textSubtitle}>Pour tous les goûts</p>
             </div>
+          </div>
+        </div>
+
+        <div className={styles.gridFlex}>
+          <div className={styles.heroLeftTwo}>
+            <div className={styles.imageContainerLeft}>
+              <Image
+                src="/iPhone.svg"
+                alt="Point France"
+                width={800}
+                height={800}
+                layout="responsive"
+              />
+            </div>
+          </div>
+
+          <div className={styles.heroRightTwo}>
+            <h1 className={styles.heroTextH1}>
+              Restaurant?<br></br>
+            </h1>
+
+            <p className={styles.subtitle}>
+              Notre mission est de construire une <span className={styles.strong}>app de livraison équitable </span>
+              pour permettre aux restaurateurs de livrer leurs clients sans
+              payer de commissions exorbitantes.
+            </p>
+
+            <p className={styles.subtitle}>
+              Plateforme de gestion des commandes en ligne via <span className={styles.strong}>App.</span><br></br>
+              Paiement en ligne.<br></br>
+              Gestion des menus et des prix.<br></br>
+            </p>
           </div>
         </div>
       </main>

@@ -6,9 +6,11 @@ const Header = () => {
   useEffect(() => {}, []);
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.Logo}>Point.</h1>
-    </div>
+    <div className={styles.Header}>
+        <div className={styles.Logo}>
+          <div className={styles.logo}>Point France.</div>
+        </div>
+      </div>
   );
 };
 
