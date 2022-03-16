@@ -100,24 +100,34 @@ const List = () => {
 
       <div className={styles.centered}>
         <Link href="/listings">
-         
-            <button
-              className={styles.centeredButton}
-              type="submit"
-              // onClick={() => accessListings()}
+          <button className={styles.centeredButton} type="submit">
+            <p
+              style={{
+                fontWeight: "700",
+                color: "rgb(255,240,0)",
+                fontSize: 16,
+              }}
             >
-              <p
-                style={{
-                  fontWeight: "700",
-                  color: "rgb(255,240,0)",
-                  fontSize: 16,
-                }}
-              >
-                Find a Place To Stay
-              </p>
-            </button>
-         
+              Find a Place To Stay
+            </p>
+          </button>
         </Link>
+
+        {/* <Link href="/post">
+        <button className={styles.centeredButton2} type="submit">
+          <p
+            style={{
+              fontWeight: "700",
+              color: "rgb(50,0,255)",
+              fontSize: 16,
+            }}
+          >
+            Share your place
+          </p>
+        </button>
+        </Link> */}
+
+
       </div>
     </div>
   );

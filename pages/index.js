@@ -79,17 +79,19 @@ export default function Home() {
 
           <div className={styles.heroRight}>
             <div className={styles.imageContainer}>
-              <div className={styles.imageContainerTop}></div>
 
-              <div className={styles.imageContainerBottom}></div>
+              {/* <div className={styles.imageContainerTop}></div>
+              <div className={styles.imageContainerBottom}></div> */}
 
-              {/* <Image
+              <Image
                 src="/point-image.svg"
                 alt="Point"
                 width={200}
                 height={200}
                 layout="responsive"
-              /> */}
+              />
+
+
             </div>
           </div>
         </div>
