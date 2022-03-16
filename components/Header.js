@@ -2,12 +2,16 @@ import React, { useEffect } from "react";
 
 import styles from "../styles/Home.module.css";
 
+import Link from "next/link";
+
 const Header = () => {
   useEffect(() => {}, []);
 
   return (
     <div className={styles.Header}>
-      <div className={styles.logo}>Point France.</div>
+      <Link href="/">
+        <a className={styles.logo}>Point.</a>
+      </Link>
     </div>
   );
 };

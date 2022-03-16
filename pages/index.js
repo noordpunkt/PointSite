@@ -6,12 +6,15 @@ import Image from "next/image";
 //Import Components
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import List from "../components/List";
+
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Point France</title>
+        <title>Point.</title>
         <link rel="icon" href="/favicon.ico" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,54 +22,55 @@ export default function Home() {
 
         <meta
           name="description"
-          content="Retrouvez tous vos restaurants préférés d'emporter."
+          content="Stand with Ukraine. Find accomodation as ukranian refugee in Europe."
         />
         <meta
           name="keywords"
-          content="emporter, restaurants, resto, paris, france, nice, lille"
+          content="berlin, home, haus, place, refugee, ukraine"
         ></meta>
 
         {/* Open Graph */}
-        <meta property="og:site_name" content="Punkt" key="ogsitename" />
-        <meta property="og:title" content="Punkt" key="ogtitle" />
+        <meta property="og:site_name" content="Point" key="ogsitename" />
+        <meta property="og:title" content="Point" key="ogtitle" />
         <meta
           property="og:description"
-          content="Retrouvez tous vos restaurants préférés d'emporter."
+          content="Stand with Ukraine. Find a place to stay in Europe."
           key="ogdesc"
         />
       </Head>
 
-      <main>
+      <div className={styles.mainContainer}>
         <Header />
 
         <div className={styles.hero}>
           <div className={styles.heroLeft}>
             <h1 className={styles.heroTextH1}>
-              {/* Retrouvez tous vos restaurants préférés. */}
-              La première App de livraison équitable.
+              Point is here to help Ukraine. Please download the app and post
+              your place to stay. Or search hosts opening their homes. Simple as
+              a tap.
             </h1>
 
             {/* <p className={styles.textSubtitle}>Disponible dans</p> */}
 
             <a
-              href="https://apps.apple.com/us/app/point-restaurants/id1583401051"
+              href="https://apps.apple.com/lv/app/zeropunkt/id1574704398"
               target="_blank"
             >
               <Image
                 src="/appStoreBadge.svg"
-                alt="Download Point France"
+                alt="Download Point"
                 width={160}
                 height={49}
               />
             </a>
 
             <a
-              href="https://play.google.com/store/apps/details?id=com.nord.point"
+              href="https://play.google.com/store/apps/details?id=com.nord.zeropunkt"
               target="_blank"
             >
               <Image
                 src="/googlePlayBadge.svg"
-                alt="Download Point France"
+                alt="Download Point"
                 width={160}
                 height={49}
               />
@@ -75,95 +79,23 @@ export default function Home() {
 
           <div className={styles.heroRight}>
             <div className={styles.imageContainer}>
-              <Image
+              <div className={styles.imageContainerTop}></div>
+
+              <div className={styles.imageContainerBottom}></div>
+
+              {/* <Image
                 src="/point-image.svg"
-                alt="Point France"
-                width={800}
-                height={800}
+                alt="Point"
+                width={200}
+                height={200}
                 layout="responsive"
-              />
+              /> */}
             </div>
           </div>
         </div>
 
-        {/* <div className={styles.Cards}>
-          <div className={styles.cardContainer}>
-            <Image
-              src="/image1.svg"
-              alt="Point France"
-              width={180}
-              height={180}
-            />
+        <List />
 
-            <div className={styles.cardContainerText}>
-              <p className={styles.textSubtitle}>Retrouvez vos restaurants.</p>
-            </div>
-          </div>
-
-          <div className={styles.cardContainer}>
-            <Image
-              src="/image2.svg"
-              alt="Point France"
-              width={180}
-              height={180}
-            />
-
-            <div className={styles.cardContainerText}>
-              <p className={styles.textSubtitle}>Restos de quartier</p>
-            </div>
-          </div>
-
-          <div className={styles.cardContainer}>
-            <Image
-              src="/image3.svg"
-              alt="Point France"
-              width={180}
-              height={180}
-            />
-
-            <div className={styles.cardContainerText}>
-              <p className={styles.textSubtitle}>Pour tous les goûts</p>
-            </div>
-          </div>
-        </div> */}
-
-        <div className={styles.gridFlex}>
-          <div className={styles.heroLeftTwo}>
-            <div className={styles.imageContainerLeft}>
-              <Image
-                src="/iPhone.svg"
-                alt="Point France"
-                width={800}
-                height={800}
-                layout="responsive"
-              />
-            </div>
-          </div>
-
-          <div className={styles.heroRightTwo}>
-            <h1 className={styles.heroTextH1Dark}>
-            Liberté, égalité, Restauranter.<br></br>
-            </h1>
-
-            <p className={styles.subtitleDark}>
-              Notre mission est de construire une{" "}
-              <span className={styles.strong}>app de livraison équitable </span>
-              pour permettre aux restaurateurs de livrer leurs clients sans
-              payer de commissions exorbitantes.
-            </p>
-
-            <p className={styles.subtitleDark}>
-              Plateforme de gestion des commandes en ligne via{" "}
-              <span className={styles.strong}>App.</span>
-              <br></br>
-              Paiement en ligne.<br></br>
-              Gestion des menus et des prix.<br></br>
-            </p>
-          </div>
-        </div>
-      </main>
-
-      <div className={styles.Bottom}>
         <Footer />
       </div>
 
@@ -178,6 +110,10 @@ export default function Home() {
 
         main {
           flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
         }
 
         footer {

@@ -1,39 +1,3 @@
-@font-face {
-  font-family: "Light";
-  src: url("/fonts/Inter-Thin.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Book";
-  src: url("/fonts/Inter-Regular.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Bold";
-  src: url("/fonts/Inter-Bold.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Black";
-  src: url("/fonts/Inter-Black.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Heavy";
-  src: url("/fonts/Inter-Black.ttf");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "HeavyPoint";
-  src: url("/fonts/Inter-Black.ttf");
-  font-display: swap;
-}
-
 .StickyTop {
   padding-left: 3rem;
   background-color: #fff;
@@ -48,110 +12,151 @@
 }
 
 .Header {
-  width: 100vw;
   height: 6rem;
   display: flex;
   align-items: center;
-  background-color:#fff;
+  background-color: #fff;
   z-index: 2;
-  padding-left:2rem;
-  background-color:rgb(0,0,200)
+  padding-left: 2rem;
+  background-color: rgb(0, 0, 200);
 }
-
-
 
 .logo {
   align-self: center;
   font-size: 2rem;
   text-align: left;
-  color: #fff;
-  font-family: "Bold";
-  letter-spacing: -.1rem;
+  color: rgba(255, 240, 0, 1);
+  font-weight: 800;
+  letter-spacing: -2px;
 }
 
 .Bottom {
   padding: 3rem;
-  background-color: #000000;
-  width: 100vw;
+  background-color: #34393e;
   z-index: 9999;
   display: flex;
-  align-self: center;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+}
+
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.listingsContainer {
+  width: 100vw
+}
+
+.centered {
+  background-color: rgba(255, 240, 0, 1);
+  margin-bottom: 4rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  display: flex;
+  justify-content: center;
+  width:100%
+}
+
+.centeredButton {
+  cursor: pointer;
+  background-color: rgba(50, 0, 255, 1);
+  border-radius: 60px;
+  border: 0;
+  padding:1rem;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.contactButton {
+  cursor: pointer;
+  background-color: rgba(50, 0, 255, 1);
+  border-radius: 12px;
+  border: 0;
+  padding:.25rem;
+  width: 240px;
+  margin: 24px auto;
 }
 
 h1.heroTextH1 {
-  font-family: "Bold";
-  font-size: 3rem;
-  letter-spacing: -.2rem;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: -1px;
+  color: #fff;
+}
+
+h2.heroTextH2 {
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -1px;
   color: #fff;
 }
 
 h1.heroTextH1Dark {
-  font-family: "Bold";
+  font-weight: 500;
   font-size: 3rem;
-  letter-spacing: -.2rem;
+  letter-spacing: -0.2rem;
   color: #121212;
 }
 
 h1.heroTwoTextH1 {
-  font-family: "HeavyPoint";
+  font-weight: 700;
   font-size: 3rem;
-  letter-spacing: -.2rem;
+  letter-spacing: -0.2rem;
   color: #fff;
 }
 
 h1.Logo {
-  font-family: "Heavy";
+  font-weight: 700;
   font-size: 2rem;
-  letter-spacing: -.2rem;
+  letter-spacing: -0.2rem;
 }
 
 h2.textLightH2 {
-  font-family: "HeavyPoint";
+  font-weight: 700;
   font-size: 1.5rem;
   color: #fff;
 }
 
 a.textLink {
-  color:#fff
+  color: #fff;
 }
 
 p.textSubtitle {
-  font-family: "Book";
+  font-weight: 300;
   font-size: 1rem;
   text-align: center;
 }
 
 p.textLight {
-  font-family: "Book";
+  font-weight: 300;
   font-size: 0.75rem;
+  line-height: 1.25rem;
   color: #fff;
 }
 
 p.textLightBig {
-  font-family: "Book";
+  font-weight: 300;
   font-size: 1rem;
   line-height: 2rem;
   color: #121212;
 }
 
 p.subtitle {
-  font-family: "Book";
+  font-weight: 300;
   font-size: 1.25rem;
   line-height: 2rem;
-  color:#fff
+  color: #fff;
 }
 
 p.subtitleDark {
-  font-family: "Book";
+  font-weight: 300;
   font-size: 1.25rem;
   line-height: 2rem;
-  color:#121212
+  color: #121212;
 }
 
 span.strong {
-  font-family: "Bold";
+  font-weight: 500;
   font-size: 1.25rem;
   line-height: 2rem;
 }
@@ -168,7 +173,6 @@ span.strong {
   justify-content: center;
 }
 
-
 .heroTwo {
   width: 100vw;
   height: 32rem;
@@ -178,24 +182,23 @@ span.strong {
 }
 
 .heroLeftTwo {
-  flex:1;
+  flex: 1;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
 .heroRightTwo {
-  flex:1;
-  padding:0 2rem
+  flex: 1;
+  padding: 0 2rem;
 }
 
 .heroLeft {
-  flex:1;
-  padding:0 2rem
+  flex: 1;
+  padding: 0 2rem;
 }
 
-
 .heroRight {
-  flex:1;
+  flex: 1;
   justify-content: flex-end;
   align-items: flex-end;
 }
@@ -206,7 +209,7 @@ span.strong {
   display: flex;
   align-self: center;
   margin: 0 auto;
-  background: rgb(0,0,200)
+  background: rgb(0, 0, 200);
 }
 
 .gridFlex {
@@ -215,13 +218,9 @@ span.strong {
   display: flex;
   align-self: center;
   margin: 0 auto;
-  background:rgb(255, 255, 255);
-  padding-top:4rem
+  background: rgb(255, 255, 255);
+  padding-top: 4rem;
 }
-
-
-
-
 
 .Cards {
   justify-content: center;
@@ -232,18 +231,13 @@ span.strong {
 }
 
 .CardsFooter {
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: row;
-  display: flex;
+  align-self: center;
 }
 
 .cardContainer {
   display: block;
-  padding: 1rem;
-  margin: 2rem;
-  justify-content: center;
-  align-items: center;
+  align-self: center;
+  margin: 0 auto;
 }
 
 .cardContainerText {
@@ -262,6 +256,20 @@ span.strong {
 .imageContainer {
   display: block;
   width: 32rem;
+  height: 32rem;
+  padding: 2rem;
+  flex-direction: column;
+  display: flex;
+}
+
+.imageContainerTop {
+  flex: 1;
+  background-color: rgba(50, 0, 255, 1);
+}
+
+.imageContainerBottom {
+  flex: 1;
+  background-color: rgba(255, 240, 0, 1);
 }
 
 .imageContainerLeft {
@@ -269,12 +277,60 @@ span.strong {
   width: 32rem;
 }
 
+.BottomFooter {
+  width: 100%;
+  height: 200px;
+  flex-wrap: wrap;
+  display: flex;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.FooterImage {
+  flex: 1;
+
+  padding: 0 2rem;
+}
+
+.FooterLeft {
+  flex: 1;
+
+  padding: 0 2rem;
+}
+
+.FooterRight {
+  flex: 1;
+  padding: 0 2rem;
+}
+
+/* Listings */
+
+.list {
+  width: 100vw;
+  height: 200px;
+  flex-wrap: wrap;
+  display: flex;
+  align-self: center;
+  margin: 0 auto;
+  background-color: aqua;
+}
+
+.containerFlex1 {
+  flex: 1;
+}
+
+.containerFlex2 {
+  flex: 2;
+}
+
+.containerList p {
+  font-size: 1rem;
+}
+
 @media (max-width: 1024px) {
-
   .gridFlex {
-    padding-top:0
+    padding-top: 0;
   }
-
 
   .heroRightTwo {
     margin-bottom: 3rem;
@@ -294,11 +350,23 @@ span.strong {
     flex-direction: column;
   }
 
-  .Bottom {
-    padding: 1rem;
-  }
-
   .heroTextContainer {
     margin: 12rem 0 0 1rem;
+  }
+
+  .BottomFooter {
+    display: block;
+  }
+
+  .FooterLeft {
+    flex: 1;
+  }
+
+  .FooterRight {
+    flex: 1;
+  }
+
+  .FooterImage {
+    display: none;
   }
 }
