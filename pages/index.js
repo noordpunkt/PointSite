@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
@@ -11,6 +13,19 @@ import List from "../components/List";
 import Link from "next/link";
 
 export default function Home() {
+
+   //Detect time
+   const [showCookies, setShowCookies] = useState(true);
+ 
+   useEffect(() => {
+    
+   }, []);
+ 
+   const closeCookies = () => {
+     setShowCookies(false);
+   };
+
+
   return (
     <div className="container">
       <Head>
@@ -22,7 +37,7 @@ export default function Home() {
 
         <meta
           name="description"
-          content="Stand with Ukraine. Find accomodation as ukranian refugee in Europe."
+          content="Host people fleeing Ukraine. Refugees: Find places to stay in Europe."
         />
         <meta
           name="keywords"
@@ -46,7 +61,7 @@ export default function Home() {
           <div className={styles.heroLeft}>
             <h1 className={styles.heroTextH1}>
               Point is here to help Ukraine. Please download the app and post
-              your place to stay. Or search hosts opening their homes. Simple as
+              your place to stay. Or find hosts opening their homes. Simple as
               a tap.
             </h1>
 
@@ -95,6 +110,42 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+
+        {showCookies === true ? (
+          <div className={styles.StickyBottom}>
+            <div className={styles.BannerTop}>
+              <p className={styles.TitleSmall}>We have cookies.</p>
+            </div>
+
+            <div className={styles.BannerCenter}>
+              <p style={{
+                color:"#121212",
+                fontSize:14
+              }}>
+                We care about your data, and we'd love to use cookies to make your experience better.
+                This website use them to provide users with content that is
+                high quality, secure and relevant to their needs and interests.
+              </p>
+            </div>
+
+            <div className={styles.BannerBottom}>
+              <div className={styles.ButtonCookies}>
+                <button
+                  className={styles.buttonStyles}
+                  type="submit"
+                  onClick={() => closeCookies()}
+                >
+                  <p className={styles.TextWhiteCenteredSmall}>Accept</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div></div>
+        )}
+
+
 
         <List />
 

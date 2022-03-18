@@ -56,6 +56,7 @@ const listings = () => {
     db.firestore()
       .collection("listings")
       .orderBy("timestamp", "desc")
+      .limit(100)
       .onSnapshot((snap) => {
         const results = snap.docs.map((doc) => ({
           id: doc.id,

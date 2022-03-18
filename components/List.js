@@ -45,18 +45,7 @@ const List = () => {
   };
 
   const fetchListings = () => {
-    db.firestore()
-      .collection("listings")
-      .orderBy("posted", "desc")
-      .onSnapshot((snap) => {
-        const results = snap.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-        setResults(results);
-
-        console.log(results);
-      });
+   
   };
 
   useEffect(() => {
@@ -113,7 +102,7 @@ const List = () => {
           </button>
         </Link>
 
-        {/* <Link href="/post">
+        <Link href="/post">
         <button className={styles.centeredButton2} type="submit">
           <p
             style={{
@@ -125,7 +114,7 @@ const List = () => {
             Share your place
           </p>
         </button>
-        </Link> */}
+        </Link>
 
 
       </div>
